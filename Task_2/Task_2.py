@@ -16,8 +16,16 @@ class AngleCorrectionNode:
     def publish_cmd_vel(self, correction_angle):
 
         # Read the point cloud data and calucalte the angle 
-        pointcloud = read_pointcloud("1.npz")
-        correction_angle= calculate_angle(pointcloud)
+       pointcloud = read_pointcloud("4.npz")
+       lines = line_detection(pointcloud)
+       angle=calculate_angle(lines)
+
+       if angle >0 :
+           
+           correction_angle = -90+angle
+       else:
+         
+           correction_angle= 90+angle
         
         # Creating a Twist message
         twist_msg = Twist()
