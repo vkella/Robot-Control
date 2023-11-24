@@ -37,7 +37,7 @@ The code implements a robot angle calulation algorithm. It processes point cloud
 ```bash
     Task_1/Task_1.py
 	
-    ```
+ ```
 	Input : NPZ File(Point Cloud Data Stored in Numpy array)
     Output: Angle in Degrees
 	
@@ -48,7 +48,7 @@ The code implements a ROS Node which publishes the calculated angular rate from 
 ```bash
     Task_2/Task_2.py
 	
-    ```
+ ```
 
 ### Task 3: Algorithm Unit Testing
 
@@ -56,7 +56,7 @@ This code implements the basic unit testing of the algorithm developed in Task 1
  ```bash
     Task_3/Task_3.py
 	
-    ```
+  ```
  
  
 ### Bonus Task: End-of-Row Detection
@@ -68,7 +68,7 @@ Integration with Task 1 : The end-of-row detection logic can be seamlessly integ
 ```bash
     Bonus/Bonus.py
 	
-    ```
+ ```
 
 ## Contributors
 - Vamsee Krishna Kella
